@@ -45,6 +45,6 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 <img width="320" height="128" alt="TileSet_20251116065429" src="https://github.com/user-attachments/assets/dd205630-b71f-4b3c-a837-3b23ca5eac85" />  
 
 
-[KillGorack.com](https://www.killgorack.com/PX4/index.php?ap=hme&cn=hme)
+[KillGorack.com](https://www.killgorack.com/PX4/index.php?ap=hme&cn=hme)  
 MIT License — free to use, modify, and share.
 
