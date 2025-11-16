@@ -38,7 +38,7 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 
 ### User interface
 
-<img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/b6ba666f-bb32-455c-a878-3d077a455d1c" />  
+<img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/5c29740c-6e68-4b79-91a2-1de282f2eaa2" />
 
 ### Example 16 block map
 
