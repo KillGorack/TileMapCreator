@@ -1,9 +1,7 @@
 ﻿# 🧱 Tilemap Builder 🧱
 
 A simple WPF tool for generating **tilesets** from a base texture and border image.  
-It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑block borders** (16 recipes → 4×4 tileset).
-
----
+It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑block borders** (16 recipes → 4×4 tileset).  
 
 ## Features
 - Load a **border image** and a **base tile**
@@ -12,8 +10,6 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
   - **9‑slice mode** → 40 recipes, 10×4 tileset
   - **4‑block mode** → 16 recipes, 4×4 tileset
 - Exports a single **PNG spritesheet** ready for game engines like Godot or Unity
-
----
 
 ## Getting Started
 
