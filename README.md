@@ -21,33 +21,34 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
    ```bash
    git clone https://github.com/yourusername/tilemap-builder.git
    cd tilemap-builder
-
 2. **Build and run the project** using Visual Studio or your preferred IDE.
-
 3. **Load your images**:
-   - Click "Load Border Image" to select your border texture.
-   - Click "Load Base Tile" to select your base tile texture.
-
+   1. Click "Load Border Image" to select your border texture.
+   2. Click "Load Base Tile" to select your base tile texture.
 4. **Set the border size** in pixels.
-
 5. **Generate the tileset** by clicking the "Generate Tileset" button.
 
 
 ## Usage Notes
 
-- If the border size is exactly half the image width and height → 4×4 tileset (TileSetRecipeB).
-- If the border size is smaller than half → 10×4 tileset (TileSetRecipe).
+> If the border size is exactly half the image width and height → 4×4 tileset (TileSetRecipeB).  
+>
+> If the border size is smaller than half → 10×4 tileset (TileSetRecipe).
 
 
-- 
-## User interface
-<img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/b6ba666f-bb32-455c-a878-3d077a455d1c" />
+### User interface
 
-## Example 16 block map
-<img width="128" height="128" alt="TileSet_20251116064445" src="https://github.com/user-attachments/assets/84bbe603-f5b8-4e39-940f-f955f6c5d03c" />
+<img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/b6ba666f-bb32-455c-a878-3d077a455d1c" />  
 
-## Example 40 block map
-<img width="320" height="128" alt="TileSet_20251116065429" src="https://github.com/user-attachments/assets/dd205630-b71f-4b3c-a837-3b23ca5eac85" />
+### Example 16 block map
 
+<img width="128" height="128" alt="TileSet_20251116064445" src="https://github.com/user-attachments/assets/84bbe603-f5b8-4e39-940f-f955f6c5d03c" />  
+
+### Example 40 block map
+
+<img width="320" height="128" alt="TileSet_20251116065429" src="https://github.com/user-attachments/assets/dd205630-b71f-4b3c-a837-3b23ca5eac85" />  
+
+
+[KillGorack.com](https://www.killgorack.com/PX4/index.php?ap=hme&cn=hme)
 MIT License — free to use, modify, and share.
 
