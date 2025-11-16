@@ -38,7 +38,7 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 
 ### User interface
 
-<img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/b6ba666f-bb32-455c-a878-3d077a455d1c" />  
+<img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/5c29740c-6e68-4b79-91a2-1de282f2eaa2" />
 
 ### Example 16 block map
 
@@ -46,7 +46,12 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 
 ### Example 40 block map
 
-<img width="320" height="128" alt="TileSet_20251116065429" src="https://github.com/user-attachments/assets/dd205630-b71f-4b3c-a837-3b23ca5eac85" />  
+<img width="320" height="128" alt="Stone_Block" src="https://github.com/user-attachments/assets/36265302-56bf-48b2-990e-d1da9d202162" />
+
+### Example in Godot TileSet Editor
+
+<img width="588" height="218" alt="image" src="https://github.com/user-attachments/assets/561054ff-86cf-4bd6-b76e-4d4b2651bc60" />
+
 
 
 [KillGorack.com](https://www.killgorack.com/PX4/index.php?ap=hme&cn=hme)  
