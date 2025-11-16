@@ -20,46 +20,50 @@ namespace TileMapCreator
 
         public static readonly int[][] TileSetRecipe = new int[][]
         {
-            new int[] { },
-            new int[] { 1, 2, 3, 4, 6, 7, 8, 9 },
-            new int[] { 1, 2, 3, 6, 7, 8, 9 },
-            new int[] { 1, 3, 4, 6, 7, 8, 9 },
-            new int[] { 1, 2, 3, 4, 6, 7, 9 },
-            new int[] { 1, 2, 3, 4, 7, 8, 9 },
-            new int[] { 1, 2, 3, 4, 7, 9 },
-            new int[] { 1, 2, 3, 6, 7, 9 },
-            new int[] { 1, 2, 3, 7, 8, 9 },
-            new int[] { 1, 3, 4, 7, 8, 9 },
-            new int[] { 1, 3, 6, 7, 8, 9 },
-            new int[] { 1, 3, 4, 6, 7, 9 },
-            new int[] { 1, 2, 3, 7, 9 },
-            new int[] { 1, 3, 7, 8, 9 },
-            new int[] { 1, 2, 3, 4, 7 },
-            new int[] { 1, 2, 3, 6, 9 },
-            new int[] { 1, 3, 4, 7, 9 },
-            new int[] { 1, 3, 6, 7, 9 },
-            new int[] { 1, 4, 7, 8, 9 },
-            new int[] { 3, 6, 7, 8, 9 },
-            new int[] { 1, 3, 7, 9 },
-            new int[] { 1, 3, 4, 7 },
-            new int[] { 1, 3, 6, 9 },
-            new int[] { 1, 2, 3, 7 },
-            new int[] { 1, 2, 3, 9 },
-            new int[] { 1, 4, 7 },
-            new int[] { 3, 6, 9 },
-            new int[] { 1, 2, 3 },
-            new int[] { 7, 8, 9 },
-            new int[] { 1, 3, 7 },
-            new int[] { 1, 3, 9 },
-            new int[] { 7, 9 },
-            new int[] { 1, 3 },
-            new int[] { 3, 9 },
-            new int[] { 1, 7 },
-            new int[] { 3, 7 },
-            new int[] { 9 },
-            new int[] { 7 },
-            new int[] { 3 },
-            new int[] { 1 },
+          new int[] { 1, 2, 3, 6, 7, 8, 9 },
+          new int[] { 1, 2, 3, 4, 7 },
+          new int[] { 1, 2, 3, 4, 7, 9 },
+          new int[] { 1, 2, 3, 7, 9 },
+          new int[] { 1, 3, 4, 7 },
+          new int[] { 1, 4, 7 },
+          new int[] { 7, 9 },
+          new int[] { 9 },
+          new int[] { 1, 2, 3, 7, 8, 9 },
+          new int[] { 1, 3, 7 },
+          new int[] { },
+          new int[] { 1, 3, 4, 6, 7, 8, 9 },
+          new int[] { 1, 2, 3, 6, 9 },
+          new int[] { 1, 2, 3, 6, 7, 9 },
+          new int[] { 1, 3, 7, 8, 9 },
+          new int[] { 1, 3, 6, 9 },
+          new int[] { 3, 6, 9 },
+          new int[] { 1, 3 },
+          new int[] { 7 },
+          new int[] { 1, 3, 4, 6, 7, 9 },
+          new int[] { 3, 7, 9 },
+          new int[] { 1, 2, 3, 4, 6, 7, 8, 9 },
+          new int[] { 1, 2, 3, 4, 6, 7, 9 },
+          new int[] { 1, 4, 7, 8, 9 },
+          new int[] { 1, 3, 4, 7, 8, 9 },
+          new int[] { 1, 3, 4, 7, 9 },
+          new int[] { 1, 2, 3, 7 },
+          new int[] { 1, 2, 3 },
+          new int[] { 3, 9 },
+          new int[] { 3 },
+          new int[] { 3, 7 },
+          new int[] { 1, 3, 9 },
+          new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 },
+          new int[] { 1, 2, 3, 4, 7, 8, 9 },
+          new int[] { 3, 6, 7, 8, 9 },
+          new int[] { 1, 3, 6, 7, 8, 9 },
+          new int[] { 1, 3, 6, 7, 9 },
+          new int[] { 1, 2, 3, 9 },
+          new int[] { 7, 8, 9 },
+          new int[] { 1, 7 },
+          new int[] { 1 },
+          new int[] { 1, 9 },
+          new int[] { 1, 3, 7 },
+          new int[] { 1, 3, 7, 9 }
         };
 
         public static readonly int[][] TileSetRecipeB = new int[][]
@@ -105,16 +109,17 @@ namespace TileMapCreator
 
         private void BuildTilesetSpriteSheet(BitmapSource borderSource, BitmapSource tileBase, int top, int left, int right, int bottom)
         {
-            if (TileSetRecipe.Length != 40)
+            if (TileSetRecipe.Length != 44)
             {
-                MessageBox.Show($"Expected 40 recipes, found {TileSetRecipe.Length}.");
+                MessageBox.Show($"Expected 44 recipes, found {TileSetRecipe.Length}.");
                 return;
             }
 
             int tileW = tileBase.PixelWidth;
             int tileH = tileBase.PixelHeight;
 
-            int cols = 10;
+            // Arrange as 11 columns × 4 rows
+            int cols = 11;
             int rows = 4;
 
             int sheetW = cols * tileW;
@@ -187,6 +192,7 @@ namespace TileMapCreator
 
             MessageBox.Show($"Tileset saved: {outPath}");
         }
+
 
 
 
@@ -385,7 +391,7 @@ namespace TileMapCreator
                 Y1 = y1,
                 X2 = x2,
                 Y2 = y2,
-                Stroke = Brushes.DarkGoldenrod,
+                Stroke = Brushes.Red,
                 StrokeThickness = 1,
                 SnapsToDevicePixels = true
             };
