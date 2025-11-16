@@ -31,7 +31,9 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 >
 > If the border size is smaller than half → 10×4 tileset (TileSetRecipe).
 >
-> Works best with square tiles (e.g., 64×64, 128×128 pixels).  
+> Works best with square tiles (e.g., 64×64, 128×128 pixels).
+>
+> The border image should have transparent areas where the base tile will show through.
 
 
 ### User interface
