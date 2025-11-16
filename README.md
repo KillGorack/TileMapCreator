@@ -39,16 +39,15 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 - If the border size is smaller than half → 10×4 tileset (TileSetRecipe).
 
 
-# User interface
+- 
+## User interface
 <img width="367" height="257" alt="image" src="https://github.com/user-attachments/assets/b6ba666f-bb32-455c-a878-3d077a455d1c" />
 
-# Example 16 block map
+## Example 16 block map
 <img width="128" height="128" alt="TileSet_20251116064445" src="https://github.com/user-attachments/assets/84bbe603-f5b8-4e39-940f-f955f6c5d03c" />
 
-# Example 40 block map
+## Example 40 block map
 <img width="320" height="128" alt="TileSet_20251116065429" src="https://github.com/user-attachments/assets/dd205630-b71f-4b3c-a837-3b23ca5eac85" />
-
-
 
 MIT License — free to use, modify, and share.
 
