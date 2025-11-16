@@ -1,0 +1,82 @@
+assets/Examples
+
+## Build results
+[Bb]in/
+[Oo]bj/
+build/
+bld/
+x64/
+x86/
+*.log
+*.vspscc
+*.vssscc
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+
+## Visual Studio folders
+.vs/
+.idea/
+*.dbmdl
+*.dbproj.schemaview
+
+## Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+## NuGet packages
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+
+## ClickOnce publish
+publish/
+
+## Backup & temporary files
+*.bak
+*.tmp
+*.temp
+~$*
+*~ 
+
+## ReSharper & Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+## Code analysis
+*.codeanalysislog.xml
+*.lastcodeanalysissucceeded
+
+## Others
+*.pdb
+*.cache
+*.sdf
+*.opensdf
+*.sln.ide
+*.psess
+*.vsp
+*.vspx
+*.pidb
+*.svclog
+*.tlog
+*.tlb
+*.tli
+*.tlh
+*.tmp_proj
+*.gpState
+*.scc
+*.dbmdl
+*.publishsettings
+AppPackages/
+Generated_Code/
+ClientBin/
+node_modules/
