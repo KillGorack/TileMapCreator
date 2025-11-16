@@ -46,7 +46,7 @@ It supports both **9‑slice borders** (40 recipes → 10×4 tileset) and **4‑
 
 ### Example 40 block map
 
-<img width="704" height="256" alt="Stone_Block" src="https://github.com/user-attachments/assets/36265302-56bf-48b2-990e-d1da9d202162" />
+<img width="320" height="128" alt="Stone_Block" src="https://github.com/user-attachments/assets/36265302-56bf-48b2-990e-d1da9d202162" />
 
 ### Example in Godot TileSet Editor
 
