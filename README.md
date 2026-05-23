@@ -16,7 +16,7 @@ Supports both 9-slice borders (44 recipes → 11×4 tileset) and 4-block borders
 
 ## Downloads
 
-Pre-built binaries available at [KillGorack.com](https://www.killgorack.com/PX4/index.php?ap=hme&cn=hme)
+Pre-built binaries available at [KillGorack.com](https://www.killgorack.com/PX4/index.php?ap=software&id=7&cn=det)
 
 - Windows x64
 - Linux x64
