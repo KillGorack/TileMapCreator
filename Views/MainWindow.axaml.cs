@@ -84,7 +84,8 @@ public partial class MainWindow : Window
         Array.Empty<int>(),
         new[] { 1, 2, 3, 4 },
     };
-    // ── loaded bitmaps ───────────────────────────────────────────────────────
+
+
     private SKBitmap? _borderBitmap;
     private SKBitmap? _tileBitmap;
 
@@ -98,7 +99,6 @@ public partial class MainWindow : Window
         };
     }
 
-    // ── helpers ──────────────────────────────────────────────────────────────
 
     private static Avalonia.Media.Imaging.Bitmap ToAvaloniaBitmap(SKBitmap sk)
     {
@@ -154,8 +154,6 @@ public partial class MainWindow : Window
             FileTypeChoices = new[] { new FilePickerFileType("PNG") { Patterns = new[] { "*.png" } } }
         });
     }
-
-    // ── event handlers ───────────────────────────────────────────────────────
 
     private async void Add_Border_Click(object? sender, RoutedEventArgs e)
     {
@@ -223,7 +221,6 @@ public partial class MainWindow : Window
         await ShowMessage($"Tileset saved: {outFile.Name}");
     }
 
-    // ── grid overlay ─────────────────────────────────────────────────────────
 
     private void RefreshLinesFromInput()
     {
@@ -264,8 +261,6 @@ public partial class MainWindow : Window
         StrokeThickness = 1,
     };
 
-    // ── spritesheet builders ─────────────────────────────────────────────────
-
     private static SKBitmap BuildSheet(SKBitmap border, SKBitmap tile,
         int top, int left, int right, int bottom)
     {
@@ -273,7 +268,6 @@ public partial class MainWindow : Window
         int tw = tile.Width, th = tile.Height;
         var sheet = new SKBitmap(cols * tw, rows * th);
 
-        // 9-slice regions (pixel coords into border bitmap)
         int bw = border.Width, bh = border.Height;
         var regions = new SKRectI[]
         {
@@ -350,8 +344,6 @@ public partial class MainWindow : Window
         return sheet;
     }
 
-    // ── message box shim ─────────────────────────────────────────────────────
-
     private async Task ShowMessage(string msg)
     {
         var dlg = new Window
@@ -369,7 +361,6 @@ public partial class MainWindow : Window
                 }
             }
         };
-        // wire OK button
         var sp = (StackPanel)dlg.Content!;
         ((Button)sp.Children[1]).Click += (_, _) => dlg.Close();
         await dlg.ShowDialog(this);
