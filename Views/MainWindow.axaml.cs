@@ -9,7 +9,6 @@ using SkiaSharp;
 using System;
 using System.IO;
 using System.Threading.Tasks;
-
 namespace TileMapCreator.Views;
 
 public partial class MainWindow : Window
