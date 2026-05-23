@@ -1,0 +1,87 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="TileMapCreator.Views.MainWindow"
+        Title="Tile Map Creator"
+        Icon="/Assets/icon.png"
+        Width="800" Height="450">
+
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#3a3a3a"/>
+            <Setter Property="Foreground" Value="#e0e0e0"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="CornerRadius" Value="4"/>
+        </Style>
+        <Style Selector="Button:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#505050"/>
+        </Style>
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="#cccccc"/>
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#2a2a2a"/>
+            <Setter Property="Foreground" Value="#e0e0e0"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="CaretBrush" Value="#e0e0e0"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left panel -->
+        <ScrollViewer Grid.Column="0"
+                      HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel Background="#222222">
+                <TextBlock Text="Border Map" FontWeight="Bold" FontSize="16" Margin="5"/>
+                <Image x:Name="Border_Map" Width="140" Height="128" Margin="5"
+                       Stretch="Uniform"/>
+                <TextBlock Text="Tile Map" FontWeight="Bold" FontSize="16" Margin="5"/>
+                <Image x:Name="Tile_Map" Width="140" Height="128" Margin="5"
+                       Stretch="Uniform"/>
+                <TextBlock Text="Border size" FontSize="12" Margin="5,5,5,0"/>
+                <TextBox x:Name="Border_Size" Margin="5,0,5,5"
+                         HorizontalAlignment="Stretch"
+                         Text="16"
+                         TextChanged="TextChanged"/>
+                <Button x:Name="BtnAddBorder" Content="Add Border Map" Margin="5"
+                        HorizontalAlignment="Stretch"
+                        Click="Add_Border_Click"/>
+                <Button x:Name="BtnAddTile"   Content="Add Tile Map"   Margin="5"
+                        HorizontalAlignment="Stretch"
+                        Click="Add_Tile_Click"/>
+                <Button x:Name="BtnRemove"    Content="Remove Maps"    Margin="5"
+                        HorizontalAlignment="Stretch"
+                        Click="Remove_Click"/>
+                <Button x:Name="BtnGenerate"  Content="Generate Map"   Margin="5"
+                        HorizontalAlignment="Stretch"
+                        Click="BuildTileset_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Right panel: square edit view + overlay -->
+        <Grid Grid.Column="1" Background="#1a1a1a">
+            <Border x:Name="EditHost"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                <Grid>
+                    <Image x:Name="Edit_Screen"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Stretch="Fill"
+                        RenderOptions.BitmapInterpolationMode="None"/>
+                    <Canvas x:Name="GridOverlay"
+                            IsHitTestVisible="False"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
