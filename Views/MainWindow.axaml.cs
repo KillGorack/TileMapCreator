@@ -272,6 +272,9 @@ public partial class MainWindow : Window
     private void TextChanged(object? sender, TextChangedEventArgs e) => RefreshLinesFromInput();
 
 
+
+
+
     /// <summary>
     /// Handles the "Build Tileset" button. Validates inputs, determines whether
     /// to use the 9-slice or 4-slice recipe based on the border size, then writes
